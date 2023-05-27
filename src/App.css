@@ -1,5 +1,10 @@
+.font-link {
+  font-family: "Roboto Condensed", sans-serif;
+} 
+
 .App {
-  text-align: center;
+  
+  text-align:left;;
 }
 
 .App-logo {
@@ -35,4 +40,118 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ********************NAVBAR****************** */
+
+
+.logo {
+  /* margin: 10px; */
+  border-color: #e91111;
+  border-radius: 10%;
+  height: 70px;
+  margin-left: auto;
+  cursor: default !important;
+  
+}
+
+.ms-auto {
+  border-bottom: 1px solid #a29e9e;
+  /* border-bottom: 2px solid #fff; */
+  opacity: 350%;
+}
+
+
+.navLink {
+  font-weight: 400 !important;
+  
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  letter-spacing: 0.0575rem !important;
+  cursor: default !important;
+  text-transform: uppercase !important;
+}
+
+.navLink span {
+  color: #e91111 !important;
+}
+
+
+.wrapper {
+  position: relative;
+  /* background: url(/src/assets/images/coffee2.jpg) no-repeat center center; */
+  /* background: url(https://source.unsplash.com/random); */
+  background-size: cover;
+  height: 86vh;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.content {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 5%;
+}
+
+.wrapper .content h3{
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.wrapper .content h3 span{
+  color:#e91111
+}
+
+.wrapper .content p {
+  font-size: 20px;
+}
+
+.col {
+  background-color: rgb(178, 206, 231) !important;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(198, 217, 234) !important;
+  padding-top: 30px;
+  text-align: center;;
+}
+
+.card .header h5 {
+  font-size: larger;
+  font-weight: 1000;
+}
+
+.card .header a {
+  color: #e91111;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+ 
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  
+
 }

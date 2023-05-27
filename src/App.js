@@ -2,12 +2,24 @@
 import React from 'react';
 import './App.css';
 import { Navigate, Routes, BrowserRouter as Router, Route} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import NavBar from './components/Navbar.js';
+import About from './components/About';
+import Cities from './components/Cities';
+import Parks from './components/Parks';
+import Mountains from './components/Mountains';
+import Beaches from './components/Beaches';
+import Islands from './components/Islands';
+import Contact from './components/Contact';
+
+// import { Container } from 'react-bootstrap';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
     // <div className="App">
     //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
+    //     {/* <img src={logo} className="App-logo" alt="logo" /> */}
     //     <p>
     //       Edit <code>src/App.js</code> and save to reload.
     //     </p>
@@ -23,24 +35,34 @@ function App() {
     // </div>
 
     <Router>
-      {/* <> */}
+      
          <NavBar />
-         {/* <br></br> */}
+         
          <Routes>
-           <Route path='/' element={<Navigate replace to="/Aboutme" />} />
+           <Route path='/' element={<Navigate replace to="/About" />} />
              
-           <Route path='/Aboutme' element={<Aboutme/>} />
-           <Route path='/Education' element={<Education/>} />
-           <Route path='/Experience' element={<Experience/>} />
+           <Route path='/About' element={<About/>} />
+           <Route path='/Cities' element={<Cities/>} />
+           <Route path='/Parks' element={<Parks/>} />
+           <Route path='/Mountains' element={<Mountains/>} />
+           <Route path='/Beaches' element={<Beaches/>} />
+           <Route path='/Islands' element={<Islands/>} />
            <Route path='/Contact' element={<Contact/>} />
 
            
-           <Route path='/Resume' element={<Resume/>} />
-           {/* <Route component={NoMatch} /> */}
+           
+           
+           
          </Routes>
          <br></br>
-         {/* <Footer/> */}
-      {/* </> */}
+
+         <Footer>
+          <div>
+          
+          </div>
+         </Footer>
+         
+      
     </Router>
   );
 }
