@@ -1,9 +1,10 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 import "../App.css";
+import "../css/custom.css";
 import slide1 from "../assets/images/highrise.jpg"
 import slide2 from "../assets/images/night-sky.jpg"
 import slide3 from "../assets/images/snow_mount1.jpg"
-// import Image from 'react-bootstrap/Image'
+import { Container } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
 
 // import {Navbar, Nav, Container, NavDropdown}  from 'react-bootstrap';
@@ -47,51 +48,54 @@ function About() {
 
   return (
 
-    <div>
-             
-        <>
-                
-            <Carousel style={{ padding: 10 }} activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item  style={{ height: 600 }}>
-                    <img
-                    // className="d-block w-100"
+    <div expand="lg">
+        <Container className="Container1"  >   
+          <>
+            <Carousel style={{ padding: 0 }} activeIndex={index} onSelect={handleSelect}>
+                <Carousel.Item  style={{ height: 800 }}>
+                  <figure className="position-relative"> 
+                    <img                
                     src={slide1}
                     className='img-fluid shadow-2-strong'
                     alt="First slide"
                     />
-                    <Carousel.Caption>
+                    <figcaption>
                     <h3>First slide label</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
+                    </figcaption>
+                   </figure>  
                 </Carousel.Item>
-                <Carousel.Item style={{ height: 600 }}>
+                <Carousel.Item style={{ height: 800 }}>
+                  <figure className="position-relative">   
                     <img
-                    className="d-block w-100"
+                    className="img-fluid shadow-2-strong"
                     src={slide2}
                     alt="Second slide"
                     />
-
-                    <Carousel.Caption>
+                    <figcaption>
                     <h3>Second slide label</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
+                    </figcaption>
+                   </figure> 
                 </Carousel.Item>
-                <Carousel.Item style={{ height: 600 }}>
+                <Carousel.Item style={{ height: 800 }}>
+                  <figure className="position-relative">    
                     <img
-                    className="d-block w-100"
+                    className="img-fluid shadow-2-strong"
                     src={slide3}
                     alt="Third slide"
                     />
-
-                    <Carousel.Caption>
+                    <figcaption>
                     <h3>Third slide label</h3>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
-                    </Carousel.Caption>
+                    </figcaption>
+                  </figure>
                 </Carousel.Item>
             </Carousel>
-        </>
+          </>
+        </Container>    
 
     </div>
   );    

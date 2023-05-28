@@ -11,9 +11,9 @@ function NavBar() {
     return (
       <div className="App">
         <>
-          
-          <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container className="container">
+          <Container className="Container2">
+             <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
+            
               <Navbar.Brand as={Link} to="/"><img className="logo" src={myLogo} alt="myLogo..."/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -34,9 +34,9 @@ function NavBar() {
                      
                   </Nav>
               </Navbar.Collapse>  
-            </Container>
-          </Navbar>
-          
+            
+            </Navbar>
+          </Container>
         </>
       </div>    
     );
