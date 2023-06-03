@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div
+    expand="lg"
+  >
+    <div
+      class="Container1 container"
+    >
+      <div
+        class="carousel slide"
+        style="padding: 0px;"
+      >
+        <div
+          class="carousel-indicators"
+        >
+          <button
+            aria-current="true"
+            aria-label="Slide 1"
+            class="active"
+            data-bs-target=""
+            type="button"
+          />
+          <button
+            aria-current="false"
+            aria-label="Slide 2"
+            data-bs-target=""
+            type="button"
+          />
+          <button
+            aria-current="false"
+            aria-label="Slide 3"
+            data-bs-target=""
+            type="button"
+          />
+        </div>
+        <div
+          class="carousel-inner"
+        >
+          <div
+            class="active carousel-item"
+            style="height: 800px;"
+          >
+            <figure
+              class="position-relative"
+            >
+              <img
+                alt="First slide"
+                class="img-fluid shadow-2-strong"
+                src="highrise.jpg"
+              />
+              <figcaption>
+                <h3>
+                  First slide label
+                </h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div
+            class="carousel-item"
+            style="height: 800px;"
+          >
+            <figure
+              class="position-relative"
+            >
+              <img
+                alt="Second slide"
+                class="img-fluid shadow-2-strong"
+                src="night-sky.jpg"
+              />
+              <figcaption>
+                <h3>
+                  Second slide label
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div
+            class="carousel-item"
+            style="height: 800px;"
+          >
+            <figure
+              class="position-relative"
+            >
+              <img
+                alt="Third slide"
+                class="img-fluid shadow-2-strong"
+                src="snow_mount1.jpg"
+              />
+              <figcaption>
+                <h3>
+                  Third slide label
+                </h3>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            aria-hidden="true"
+            class="carousel-control-prev-icon"
+          />
+          <span
+            class="visually-hidden"
+          >
+            Previous
+          </span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            aria-hidden="true"
+            class="carousel-control-next-icon"
+          />
+          <span
+            class="visually-hidden"
+          >
+            Next
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
