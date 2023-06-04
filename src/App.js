@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import { Navigate, Routes, BrowserRouter as Router, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import NavBar from './components/Navbar.js';
+import Hero from './components/Hero.js';
 import About from './components/About';
 import Cities from './components/Cities';
 import Parks from './components/Parks';
@@ -36,7 +36,7 @@ function App() {
 
     <Router>
       
-         <NavBar />
+         <Hero />
          
          <Routes>
            <Route path='/' element={<Navigate replace to="/About" />} />

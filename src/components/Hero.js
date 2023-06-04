@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import myLogo from "../assets/images/icons-bridge-80.png";
 
 
-function NavBar() {
+function Hero() {
     
     return (
       <div className="App">
@@ -14,7 +14,7 @@ function NavBar() {
           <Container className="Container2">
              <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
             
-              <Navbar.Brand as={Link} to="/"><img className="logo" src={myLogo} alt="myLogo..."/></Navbar.Brand>
+              <Navbar.Brand  as={Link} to="/"><img Data-testid="link" className="logo" src={myLogo} alt="myLogo..."></img></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="ms-auto">
@@ -45,4 +45,4 @@ function NavBar() {
 
 
 
-export default NavBar;
+export default Hero;
