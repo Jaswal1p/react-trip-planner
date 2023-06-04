@@ -3,20 +3,22 @@ import "../App.css"
 import {Navbar, Nav, Container}  from 'react-bootstrap';
 // import  {NavDropdown } from 'react-bootstrap'
 import { Link } from "react-router-dom";
+
 import myLogo from "../assets/images/icons-bridge-80.png";
 
 
 function Hero() {
-    
-    return (
-      <div className="App">
-        <>
-          <Container className="Container2">
-             <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
-            
-              <Navbar.Brand  as={Link} to="/"><img Data-testid="link" className="logo" src={myLogo} alt="myLogo..."></img></Navbar.Brand>
+  return (
+    <div className="App">
+      <>
+        <Container className="Container2">
+          <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar.Brand  as={Link} to="/"><img data-testid="link" className="logo" src={myLogo} alt="myLogo..."></img></Navbar.Brand>
+
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
                 <Navbar.Collapse id="responsive-navbar-nav">
+
                   <Nav className="ms-auto">
                     <Nav.Link className="navLink" as={Link} to="/About" ><span>A</span>bout</Nav.Link>
                     <Nav.Link className="navLink" as={Link} to="/Cities"><span>C</span>ities</Nav.Link>
@@ -26,23 +28,48 @@ function Hero() {
                     <Nav.Link className="navLink" as={Link} to="/Islands"><span>I</span>slands</Nav.Link>
                     <Nav.Link className="navLink" as={Link} to="/Contact"><span>C</span>ontact</Nav.Link>
                     {/* <NavDropdown className="navLink" title="Link" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
-                    </NavDropdown> */}
-                     
+                          <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                          <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
+                        </NavDropdown> */}
+
                   </Nav>
-              </Navbar.Collapse>  
-            
-            </Navbar>
-          </Container>
-        </>
-      </div>    
-    );
+                </Navbar.Collapse>              
+          </Navbar>
+        </Container>
+      </>
+    </div>    
+  );
 }
 
 
 
 
 export default Hero;
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+
+// function Hero() {
+    
+//   return (
+//       <div>
+           
+//           <>
+//           <h2>Green or Snow covered</h2>
+          
+//           </>
+//       </div>    
+//   );
+// }
+
+
+// export default Hero;
