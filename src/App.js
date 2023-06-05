@@ -11,6 +11,7 @@ import Mountains from './components/Mountains';
 import Beaches from './components/Beaches';
 import Islands from './components/Islands';
 import Contact from './components/Contact';
+import Gallery from './components/Gallery';
 
 // import { Container } from 'react-bootstrap';
 import Footer from './components/Footer.js';
@@ -55,6 +56,10 @@ function App() {
            
          </Routes>
          <br></br>
+
+         <main>
+          <Gallery></Gallery>
+         </main>
 
          <Footer>
           <div>
